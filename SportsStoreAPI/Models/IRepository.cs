@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace SportsStoreAPI.Models
 {
-    public class IRepository 
+    public interface IRepository 
     {
         IEnumerable<Product> Products { get; }
         Task<int> SaveProductAsync(Product product);
